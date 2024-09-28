@@ -1,0 +1,286 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+.container > .cont1 {
+  height: fit-content;
+  width: fit-content;
+}
+.container > .cont2 {
+  margin-top: 60px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0px;
+}
+.container > .cont2 > .left > .item1 {
+  height: 50px;
+  width: 900px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.25);
+}
+.container > .cont2 > .left > .item1 > .sub1,
+.container > .cont2 > .left > .item1 > .sub2,
+.container > .cont2 > .left > .item1 > .sub3 {
+  color: #081466;
+  font-size: 18px;
+  font-weight: 500;
+}
+.container > .cont2 > .left > .item2 {
+  height: 400px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 25px;
+  padding: 20px 40px;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+.container > .cont2 > .left > .item2 > .sub1 {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+.container > .cont2 > .left > .item2 > .sub2 {
+  height: 80px;
+  width: calc(900px - 80px);
+  color: var(--primary-text-color);
+  text-align: justify;
+  font-size: 16px;
+}
+.container > .cont2 > .left > .item2 > .sub3 {
+  color: var(--primary-text-color);
+  text-align: justify;
+  font-size: 16px;
+}
+.container > .cont2 > .left > .item2 > .sub3 > .optionContainer > label {
+  display: flex;
+  gap: 10px;
+}
+.container > .cont2 > .left > .item2 > .sub4 {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.container > .cont2 > .left > .item2 > .sub4 > button {
+  height: 50px;
+  width: 160px;
+  border-radius: 5px;
+  background: #10b65c;
+  border: none;
+  color: var(--white-color);
+}
+.container > .cont2 > .right > .item3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 40px;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.25);
+}
+.container > .cont2 > .right > .item3 > .heading {
+  color: var(--primary-text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+/* Container for the buttons arranged in a 4 x n grid */
+.container > .cont2 > .right > .item3 > .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  gap: 20px; /* Space between buttons */
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Styling for the buttons */
+.container > .cont2 > .right > .item3 > .buttons > .navButton {
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active button styling */
+.container > .cont2 > .right > .item3 > .buttons > .activeNavButton {
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  color: white;
+  border: none;
+}
+
+/* Hover effect */
+.container > .cont2 > .right > .item3 > .buttons > .navButton:hover,
+.container > .cont2 > .right > .item3 > .buttons > .activeNavButton:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.container > .cont2 > .scoreContainer {
+  height: fit-content;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+.container > .cont2 > .scoreContainer > .first {
+  height: fit-content;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.container > .cont2 > .scoreContainer > .first > span {
+  font-size: 22px;
+}
+.container > .cont2 > .scoreContainer > .viewAnswersButton {
+  padding: 10px 30px;
+  background-color: var(--background-color);
+  border: none;
+  color: #fff;
+}
+.container > .cont2 > .scoreContainer > .second {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  border: 1px solid rgb(0, 0, 0, 0.25);
+}
+.container > .cont2 > .scoreContainer > .second > .up {
+  font-size: 28px;
+}
+.container > .cont2 > .scoreContainer > .second > .down {
+  font-size: 14px;
+}
+.container > .cont2 > .allAnswersContainer {
+  height: fit-content;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.25);
+  gap: 10px;
+  padding: 20px 0px 50px 0px;
+  border-radius: 20px;
+}
+.container > .cont2 > .allAnswersContainer > h2 {
+  color: #081466;
+  font-size: 24px;
+  font-weight: 500;
+}
+.container > .cont2 > .allAnswersContainer > .questionTitle {
+  color: #081466;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container > .cont2 > .allAnswersContainer > .questionIndividual {
+  height: fit-content;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview {
+  height: 200px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview
+  > .questionUpper {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview
+  > .questionUpper
+  > .questionNo {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview
+  > .questionUpper
+  > .questionText {
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview
+  > .optionContainer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.container
+  > .cont2
+  > .allAnswersContainer
+  > .questionIndividual
+  > .questionReview
+  > .optionContainer
+  > label {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 6px;
+}

@@ -1,0 +1,130 @@
+.container {
+  padding: 0px 50px;
+  height: 120px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.container > .item1 {
+  height: inherit;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container > .item1 > .sub1 {
+  height: fit-content;
+  width: 120px;
+}
+.container > .item1 > .sub1 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.container > .item1 > .sub2 {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 25px;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 3px solid #e5e5e5;
+}
+.container > .item1 > .sub2 > .upperText {
+  color: var(--primary-text-color);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+}
+.container > .item1 > .sub2 > .lowerText {
+  color: var(--primary-text-color);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container > .item2 {
+  height: 100%;
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > .item2 > img {
+  height: fit-content;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.container > .item2 > .profile {
+  height: fit-content;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  border-left: 2px solid #dddddd;
+}
+.container > .item2 > .profile > .name {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  color: var(--primary-text-color);
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 600;
+}
+.container > .item2 > .profile > .image {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+}
+.container > .item2 > .profile > .image > img {
+  border-radius: 20px;
+}
+.container > .item2 > .profile > .image > .list {
+  position: absolute;
+  right:50px;
+  height: fit-content;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px 0px;
+}
+.container > .item2 > .profile > .image > .list > .items {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  gap: 6px;
+}
+
+.container > .item2 > .profile > .image > .list > .items > img {
+  height: 20px;
+  width: 20px;
+  display: grid;
+  place-content: center;
+}
+.container > .item2 > .profile > .image > .list > .items > span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}

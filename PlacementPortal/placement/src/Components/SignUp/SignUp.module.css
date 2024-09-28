@@ -1,0 +1,131 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+.container > .cont1 {
+  height: fit-content;
+  width: fit-content;
+}
+.container > .cont2 {
+  margin-top: 4px;
+  height: calc(100vh - 124px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #04a1db;
+}
+.container > .cont2 > .sub1 {
+  height: fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  padding: 60px 30px;
+  border-radius: 25px;
+}
+.container > .cont2 > .sub1 > .title{
+  height: fit-content;
+  width: fit-content;
+  color: var(--white-color);
+  font-weight: 300;
+  font-size: 2rem;
+}
+.container > .cont2 > .sub1 > .items {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+.container > .cont2 > .sub1 > .items > label {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: var(--white-color);
+}
+.container > .cont2 > .sub1 > .items > div {
+  position: relative;
+}
+.container > .cont2 > .sub1 > .items > div > img {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  margin: 13px 15px;
+}
+.container > .cont2 > .sub1 > .items > div > input {
+  /* position: absolute; */
+  height: 40px;
+  border: 2px solid var(--white-color);
+  background-color: inherit;
+  border-radius: 10px;
+  padding-left: 45px;
+}
+.container > .cont2 > .sub1 > .items > div > input::placeholder {
+  color: var(--white-color);
+}
+.container > .cont2 > .sub1 > .items:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 280px;
+}
+.container > .cont2 > .sub1 > .items:nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.container > .cont2 > .sub1 > .items:nth-child(2) > div > input {
+  width: 280px;
+}
+.container > .cont2 > .sub1 > .items:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.container > .cont2 > .sub1 > .items:nth-child(3) > div > input {
+  width: 280px;
+}
+.container > .cont2 > .sub1 > .items:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.container > .cont2 > .sub1 > .items:nth-child(4) > div > input {
+  width: 580px;
+}
+.container > .cont2 > .sub1 > .items:nth-child(5) > div > input {
+  width: 280px;
+}
+.container > .cont2 > .sub1 > .items:nth-child(6) > div > input {
+  width: 280px;
+}
+.container > .cont2 > .sub1 > .submit {
+  height: 80px;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+.container > .cont2 > .sub1 > .submit > button {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.container > .cont2 > .sub2 {
+  height: 500px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > .cont2 > .sub2 > img {
+  height: 100%;
+  object-fit: fill;
+  /* background-color: #fff; */
+}
