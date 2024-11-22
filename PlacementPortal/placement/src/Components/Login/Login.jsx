@@ -14,13 +14,13 @@ const Login = () => {
           <div className={s.items}>
             <label htmlFor="fname">Your ID</label>
             <div><img src='./Assets/mail.svg' ></img>
-              <input type="fname" id='fname' className={s.input} placeholder='Type your first name' name='firstname' />
+              <input type="fname" id='fname' className={s.input} placeholder='Type your id' name='firstname' />
             </div>
           </div>
           <div className={s.items}>
             <label htmlFor="lname">Your Password</label>
             <div><img src='./Assets/mail.svg' ></img>
-              <input type="lname" id='lname' className={s.input} placeholder='Type your last name' name='lastname'/></div>
+              <input type="lname" id='lname' className={s.input} placeholder='Type your password' name='lastname'/></div>
           </div>
           <div className={s.submit}>
             <button className='hover' type='submit'>Sign In</button>
