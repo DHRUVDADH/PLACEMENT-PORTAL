@@ -38,7 +38,7 @@ const SignUp = () => {
               <input type="text" id='password' className={s.input} placeholder='Type your password' name='password'/></div>
           </div>
           <div className={s.submit}>
-            <button className='hover' type='submit'>Sign Up</button>
+            <button className='hover' type='submit'>Sign In</button>
           </div>
         </form>
         <div className={s.sub2}>
