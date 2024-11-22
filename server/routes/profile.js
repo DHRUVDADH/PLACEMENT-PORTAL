@@ -30,4 +30,22 @@ router.put("/updateProfile", authMiddleware, async (req, res) => {
   }
 });
 
+router.get('/profile', authMiddleware, (req, res) => {
+  const userId = req.user.id;  // From the decoded JWT token
+
+  // Fetch the user profile based on the user ID from the database
+  // Assuming you have a User model to fetch the user's profile
+  User.findById(userId)
+    .then(user => {
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      res.status(200).json({ profile: user });
+    })
+    .catch(err => {
+      res.status(500).json({ message: 'Server error', error: err.message });
+    });
+});
+
+
 module.exports = router;

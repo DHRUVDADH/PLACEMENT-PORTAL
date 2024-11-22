@@ -57,6 +57,13 @@ router.post('/login', async (req, res) => {
   }
 });
 
+router.post('/logout', (req, res) => {
+  // Here, you don't really need to do anything since JWT is stateless,
+  // but we can send a response to inform the client.
+  res.status(200).json({ message: 'Logged out successfully' });
+});
+
+
 module.exports = router;
 
 // const express = require('express');

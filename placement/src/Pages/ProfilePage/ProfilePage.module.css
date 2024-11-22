@@ -207,7 +207,7 @@
 
 .saveButton:hover,
 .editButton:hover {
-  background-color: #0056b3;
+  background-color: #054586;
 }
 
 /* Right Column: User Information */
@@ -266,6 +266,7 @@
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
+  margin-right: 100px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -274,7 +275,8 @@
 }
 
 .submitButton:hover {
-  background-color: #0056b3;
+  background-color: #054586;
+ 
 }
 
 .submitButton:focus {
@@ -351,4 +353,7 @@
   background-color: #007bff;
   color: white;
   border-radius: 5px;
+}
+.saveButtoncgpa:hover{
+  background-color: #054586;
 }

@@ -386,6 +386,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import s from "./ProfilePage.module.css";
+import { useNavigate } from 'react-router-dom';
 
 const ProfilePage = () => {
   const [userinfo, setUserinfo] = useState({
@@ -398,7 +399,7 @@ const ProfilePage = () => {
     cgpa: "",
     resume: null,
   });
-
+  const navigate = useNavigate();
   const [newSkill, setNewSkill] = useState({ name: "", percent: "" });
   const [newLanguage, setNewLanguage] = useState({ name: "", percent: "" });
   const [showSkillInput, setShowSkillInput] = useState(false);
@@ -481,6 +482,10 @@ const ProfilePage = () => {
     } else {
       setMode("edit");
     }
+  };
+
+  const handleQuizRedirect = () => {
+    navigate("/quiz"); // Redirect to the quiz page
   };
 
   return (
@@ -797,6 +802,14 @@ const ProfilePage = () => {
       <div className={s.submitButtonContainer}>
         <button onClick={handleToggleMode} className={s.submitButton}>
           {mode === "edit" ? "Save Changes" : "Edit Profile"}
+        </button>
+        {/* Quiz Button */}
+        <button
+          className={s.submitButton}
+          type="button" // Use type="button" to prevent form submission
+          onClick={handleQuizRedirect} // Redirect to quiz page when clicked
+        >
+          Go to Quiz
         </button>
         {mode === "view" && (
           <div className={s.submitButtonContainer}>
