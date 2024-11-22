@@ -66,7 +66,7 @@ const Login = () => {
     if (response.ok) {
       localStorage.setItem('token', data.token); // Store token in localStorage
       alert('Login successful!');
-      navigate('/quiz'); // Redirect to dashboard or home after login
+      navigate('/profile'); // Redirect to dashboard or home after login
     } else {
       alert(data.message);
     }
@@ -116,7 +116,7 @@ const Login = () => {
             </div>
             <p>
               Don't have an account?{" "}
-              <span onClick={() => navigate("/signup")}>Login</span>
+              <span onClick={() => navigate("/signup")}>signup</span>
             </p>
           </div>
         </form>
